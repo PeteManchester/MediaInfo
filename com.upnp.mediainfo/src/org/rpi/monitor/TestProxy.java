@@ -26,6 +26,8 @@ import org.openhome.net.core.SubnetList;
 import org.rpi.config.Config;
 import org.rpi.monitor.workqueue.WorkQueue;
 
+import com.genesyslab.ail.InteractionChat;
+
 public class TestProxy implements ICpDeviceListListener {
 
 	private static Logger log = Logger.getLogger(TestProxy.class);
@@ -42,7 +44,7 @@ public class TestProxy implements ICpDeviceListListener {
 	public TestProxy(int aMsearchTimeSecs) {
 		WorkQueue.getInstance().setProxy(this);
 		CpDeviceListUpnpServiceType list = new CpDeviceListUpnpServiceType("av.openhome.org", "Info", 1, this);
-
+		InteractionChat chat = null;
 		Semaphore sem = new Semaphore(1);
 		sem.acquireUninterruptibly();
 		try {
