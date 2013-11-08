@@ -6,5 +6,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ohNet"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jehrico"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jen"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/AIL"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
