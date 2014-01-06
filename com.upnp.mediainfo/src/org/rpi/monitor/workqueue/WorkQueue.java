@@ -204,6 +204,7 @@ public class WorkQueue implements Runnable {
 				}
 			}
 			info.setLyrics(res);
+			log.debug(res);
 			if (bGetArtistInfo) {
 				ArtistInfo artist_info = GetArtistInfo(mArtist);
 				info.setArtistInfo(artist_info);

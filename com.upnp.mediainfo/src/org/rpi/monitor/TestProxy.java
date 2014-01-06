@@ -99,7 +99,8 @@ public class TestProxy implements ICpDeviceListListener {
 
 	public static void main(String[] args) {
 		getConfig();
-		ConfigureLogging();				
+		ConfigureLogging();	
+		ConfigureLibraries cl = new ConfigureLibraries();
 
 		InitParams initParams = new InitParams();
 		Library lib = new Library();
